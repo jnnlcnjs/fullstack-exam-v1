@@ -3,28 +3,22 @@
 ## Leave Management System
 The system has two portals. One for the Manager and one for the Employee.
 
-### Manager Portal
-* This is where the Manager can list, add, edit, and delete Employee records.
-* This is where the Manager can give or remove Employee leave credits.
-* Employee record will be Id, First and Last Name only. The Id must not be a MySQL generated number.
-* The interface for adding and removing Employee leave credits is up to you.
-* The interface for approving and denying Employee leave request is up to you.
-
 ### Employee Portal
+* It must have a login.
+* An employee record should have an Id, Username, Password, First and Last Name fields.
 * This is where the Employee can file for a paid leave.
 * This is where the Employee can cancel a filed leave.
-* This is where the Employee can see the status of his filed leaves.
 
-### Business rules
-* Only employee records can list, file, approve, deny or cancel leaves. 
-* An employee must file a leave one week ahead of schedule.
+### Business rules 
+* An employee can only file a leave one week ahead of schedule.
 * An employee cannot file a leave without leave credits.
-* An employee can only have 12 available leaves in a year.
-* An expired or used leave cannot be cancelled.
+* An employee cannot cancel a leave that is already expired, in-use or already used.
 * An employee cannot file a leave that overlaps another leave.
 
 ### Instructions
 * Fork this repository to yours. 
+* The employee Id must not be a MySQL generated number. Must be a GUID.
+* The user interface design is up to you. As long as it is functional. As long as it has HTML, CSS and Javascript. 
 * We have prepared docker images for you to use. This is to ensure we are going to use the same environment.
 * You can immediately build and start our docker containers.
 * There is a ready codeigniter/ directory inside this repository. That is your workspace.
@@ -45,7 +39,6 @@ NOT have any CodeIgniter or external framework codes.
 saved in your database from the Application folder.
 * You can make your own exception classes if needed inside the src/Sourcefit/ directories. 
 
-
 ### Explanation
 * The content of the src/Sourcefit/ should only contain classes related to the business so that it can be easily moved to a 
 different PHP framework if needed. 
@@ -58,5 +51,7 @@ different PHP framework if needed.
 * If you can separate the business rules into it's own classes and demonstrate how I can add or remove business rules without modifying 
 the source code, the better.
 
+
+For questions, email me at erickson.reyes@sourcefit.com
 
 Good luck and have fun!
