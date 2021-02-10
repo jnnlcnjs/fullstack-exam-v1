@@ -1,9 +1,6 @@
 # Sourcefit Full Stack Developer Exam Version 1.0
 
 ## Leave Management System
-The system has two portals. One for the Manager and one for the Employee.
-
-### Employee Portal
 * It must have a login.
 * An employee record should have an Id, Username, Password, First and Last Name fields.
 * This is where the Employee can file for a paid leave.
